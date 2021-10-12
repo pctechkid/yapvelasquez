@@ -1,0 +1,380 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNIVERSITY REGISTRATION</title>
+    <link rel = "icon" href = 
+    "https://media.geeksforgeeks.org/wp-content/cdn-uploads/gfg_200X200.png" 
+            type = "image/x-icon">
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+
+</head>
+<body>
+    
+<!-- header section starts  -->
+
+<header>
+
+    <a href="#" class="logo"><span>Yap</span>Chin</a>
+
+    <input type="checkbox" id="menu-bar">
+    <label for="menu-bar" class="fas fa-bars"></label>
+
+    <nav class="navbar">
+        <a href="#home">HOME</a>
+        <a href="/student/dashboard">DASHBOARD</a>
+        <a href="#features">features</a>
+        <a href="#about">about</a>
+        <a href="#pricing">courses</a>
+        <a href="#contact">contact us</a>
+        <a href="  {% url 'myapp1:loginview_view' %}">SIGN UP</a>
+
+      
+    </nav>
+
+</header>
+
+<!-- header section ends -->
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+
+    <div class="content">
+        <h3><span>University</span>Registration</h3>
+        <p>This student registration form is used to register students for a subject course. This Student Registration Form was initially designed for university-level courses, and it also allows students to quickly and easily sign up for your class online with different subjects offered. Students can provide their contact information, such as name, age, birth date, and nationality, detail their academic history, and subjects they wished to take. Students and admins can edit every file. A Registration Form reducing your teacher's workload, student enrollment is as easy as A-B-C!</p>
+        <a href="#pricing" class="btn">Get Started</a>
+    </div>
+
+    <div class="image">
+        <img src="images/home-img.png" alt="">
+    </div>
+
+
+    
+</section>
+
+<!-- home section ends -->
+
+
+
+<!-- features section starts  -->
+
+<section class="features" id="features">
+
+    <h1 class="heading"> System features </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="{% static 'images/school.png'%}" alt="">
+            <h3>Easier Enrollment Process</h3>
+            <p>Enrollment is much easier since all the  tabs you need is on the homepage.</p>
+            <a href="#" class="btn">read more</a>
+        </div>
+
+        <div class="box">
+            <img src="{% static 'images/school2.png'%}" alt="">
+            <h3>To keep ahead of the competition, you need to serve them before they do.</h3>
+            <p> 
+                This is where an intuitive enrollment system gives you the edge – it stores all inquiries and communication about enrollment, automatically sends relevant information their way and instantly notifies you about the inquiry. You can also distribute these leads to your team members based on location and expertise while keeping an overlooking eye on the whole process.</p>
+            <a href="#" class="btn">read more</a>
+        </div>
+
+        <div class="box">
+            <img src="{% static 'images/school3.png'%}" alt="">
+            <h3>freindly interactions</h3>
+            <p>Studies find that learner-learner interaction leads to greater learning and high course satisfaction. This is likely because students are motivated to learn when they are in a group. They no longer feel isolated and benefit from other people’s feedback.</p>
+            <a href="#" class="btn">read more</a>
+        </div>
+
+    </div>
+
+</section>
+ 
+
+
+
+
+<!-- features section ends -->
+
+<!-- about section starts  -->
+
+<section class="about" id="about">
+
+    <h1 class="heading"> about us <br><br><br> </h1>
+
+    <div class="column">
+
+        <div class="image">
+            <img src="{% static 'images/jeya.jpg'%}" width="10" height="600" alt=""><!-- add pic of yourself here je and add something about yourself below-->
+        </div>
+
+        <div class="content">
+            <h3>Jerech Ira Ann Yap</h3>
+           <h4> <p>Hi Everyone! I am Jerech Ira Ann Yap and we created this website to help students register to their subjects.</p>
+            <p>Hi! I am Kristine Velasquez a BSIT 3rd year student partner with Kristine Velazquez to implement this project. This project is used for student application to courses and different subject offered to our University.</p></h4>
+            
+            <div class="buttons">
+                <a href="#" class="btn"> <i class="fab fa-google-plus-square"></i> Google Plus </a>
+                <a href="#" class="btn"> <i class="fab fa-facebook-square"></i> Facebook </a>
+            </div>
+        </div>
+    
+          
+    </div>
+
+</section>
+ 
+
+
+<!-- about section ends -->
+
+
+<!-- review section starts  
+
+<section class="review" id="review">
+
+    <h1 class="heading"> people's review </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <i class="fas fa-quote-right"></i>
+            <div class="user">
+                <img src="images/pic1.png" alt="">
+                <h3>john deo</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="comment">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus et, perspiciatis nisi tempore aspernatur accusantium sed distinctio facilis aperiam laborum autem earum repellat, commodi eum. Ullam cupiditate expedita officiis obcaecati?
+                </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-quote-right"></i>
+            <div class="user">
+                <img src="images/pic2.png" alt="">
+                <h3>john deo</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="comment">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus et, perspiciatis nisi tempore aspernatur accusantium sed distinctio facilis aperiam laborum autem earum repellat, commodi eum. Ullam cupiditate expedita officiis obcaecati?
+                </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-quote-right"></i>
+            <div class="user">
+                <img src="images/pic3.png" alt="">
+                <h3>john deo</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="comment">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus et, perspiciatis nisi tempore aspernatur accusantium sed distinctio facilis aperiam laborum autem earum repellat, commodi eum. Ullam cupiditate expedita officiis obcaecati?
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+-->
+
+<!-- pricing section starts  -->
+
+<section class="pricing" id="pricing">
+
+    <h1 class="heading">POPULAR COURSES WE OFFER <br><br><br></h1>
+
+    <div class="box-container">
+
+        <showcase>
+            <div id="courses">
+                <div class="cs">
+                    <h3>Computer Science</h3>
+                  
+                    <img src="{% static 'images/cse.jpeg'%}" width="50%" alt="cs"/> 
+                    <a href="#" ><button class="btn">Apply Here</button></a> 
+                </div>
+                <div class="business">
+                    <h3>Business Studies</h3>
+                    <img src="{% static 'images/business.jpeg'%}" alt="business">
+                    <a href="#" ><button class="btn">Apply Here</button></a>
+                </div>
+                <div class="journalism">
+                    <h3>Media and Journalism</h3>
+                    <img src="{% static 'images/journalism.jpeg'%}" alt="media">
+                    <a href="#" ><button class="btn">Apply Here</button></a>
+                </div>
+                <div class="arts">
+                    <h3>Arts & Humanities</h3>
+                    <img src="{% static 'images/arts.jpeg'%}" alt="arts">
+                    <a href="#" ><button class="btn">Apply Here</button></a>
+                </div>
+                <div class="medical">
+                    <h3>Medical Science</h3>
+                    <img src="{% static 'images/medical.jpeg'%}" alt="ms">
+                    <a href="#" ><button class="btn">Apply Here</button><br><br><br><br></a>
+                </div>
+            </div>
+        </showcase>
+
+        <showcase>
+            <div id="courses">
+                <div class="cs">
+                    <h3>Accountancy</h3>
+                  
+                    <img src="{% static 'images/accountancy.jpg'%}" width="50%" alt="cs"/> 
+                    <a href="#" ><button class="btn">Apply Here</button></a> 
+                </div>
+                <div class="business">
+                    <h3>Communication</h3>
+                    <img src="{% static 'images/communication.jfif'%}" width="50%" alt="business">
+                    <a href="#" ><button class="btn">Apply Here</button></a>
+                </div>
+                <div class="journalism">
+                    <h3>Physical Education</h3>
+                    <img src="{% static 'images/PE.jpg'%}" width="50%" alt="media">
+                    <a href="#" ><button class="btn">Apply Here</button></a>
+                </div>
+                <div class="arts">
+                    <h3>Cookery</h3>
+                    <img src="{% static 'images/cookery.jpg'%}" width="50%" alt="arts">
+                    <a href="#" ><button class="btn">Apply Here</button></a>
+                </div>
+                <div class="medical">
+                    <h3>History</h3>
+                    <img src="{% static 'images/history.jpg'%}" width="50%"  alt="ms">
+                    <a href="#" ><button class="btn">Apply Here</button></a>
+                </div>
+            </div>
+        </showcase>
+    </div>
+
+</section>
+
+<!-- pricing section ends -->
+
+<!-- contact section starts  -->
+
+<section class="contact" id="contact">
+
+    <div class="image">
+        <img src="{% static 'images/contact.jpg' %}" alt="">
+    </div>
+
+    <form action="">
+
+        <h1 class="heading">contact us</h1>
+
+        <div class="inputBox">
+            <input type="text" required>
+            <label>name</label>
+        </div>
+
+        <div class="inputBox">
+            <input type="email" required>
+            <label>email</label>
+        </div>
+
+        <div class="inputBox">
+            <input type="number" required>
+            <label>phone</label>
+        </div>
+
+        <div class="inputBox">
+            <textarea required name="" id="" cols="30" rows="10"></textarea>
+            <label>message</label>
+        </div>
+
+        <input type="submit" class="btn" value="send message">
+
+    </form>
+
+</section>
+
+<!-- contact section edns -->
+
+<!-- footer section starts  -->
+
+<div class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>about us</h3>
+            <p>Hi! I am Jerech Ira Ann Yap a BSIT 3rd year student partner with Kristine Velasquez to implement this project. This project is used for student application to courses and different subject offered to our University.</p>
+        </div>
+
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="#">home</a>
+            <a href="#">features</a>
+            <a href="#">about</a>
+            <a href="#">review</a>
+            <a href="#">courses</a>
+            <a href="#">contact</a>
+        </div>
+
+        <div class="box">
+            <h3>follow us</h3>
+            <a href="#">facebook</a>
+            <a href="#">instagram</a>
+            <a href="#">pinterest</a>
+            <a href="#">twitter</a>
+        </div>
+
+        <div class="box">
+            <h3>contact info</h3>
+            <div class="info">
+                <i class="fas fa-phone"></i>
+                <p> +123-456-7890 <br> 09284213074 </p>
+            </div>
+            <div class="info">
+                <i class="fas fa-envelope"></i>
+                <p> jerechyapp@gmail.com <br> kristinevelasquez23@gmail.com </p>
+            </div>
+            <div class="info">
+                <i class="fas fa-map-marker-alt"></i>
+                <p> Cebu, Philippines - 6000 </p>
+            </div>
+        </div>
+
+    </div>
+
+    <h1 class="credit"> &copy; copyright @ 2021 by Jerech Ira Ann Yap CSIT327 G2-C1 AY 2021 - 2022 </h1>
+
+</div>
+
+<!-- footer section ends -->
+
+
+</body>
+</html>
