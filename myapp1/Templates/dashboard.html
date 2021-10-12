@@ -104,7 +104,10 @@
                 <td>{{student.address}}</td> 
                 <td>
                 
-                    <button href="#" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal-{{student.idn}}" data-whatever="@mdo data-placement=" title="Update"><i class="fa fa-edit" aria-hidden="true"></i></button>
+                    
+
+                    <a type="button" class="btn btn-primary" href="#" data-toggle="modal" data-target="#exampleModal-{{student.idn}}"><i class="far fa-edit"></i></a>
+                    <a type="button" class="btn btn-primary" href="#" data-toggle="modal" data-target="#Modal-{{student.idn}}"><i class="far fa-trash-alt"></i></a>
 
 
                         <div class="modal fade" id="exampleModal-{{student.idn}}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -165,7 +168,7 @@
                         
                         
                         <!-- Button trigger modal -->
-  <a type="button" class="btn btn-primary" data-target="aaaa"data-toggle="modal"><i class="fa fa-trash" aria-hidden="true"></i></a>
+  
     </div>
                           
                          <!-- Modal HTML -->
