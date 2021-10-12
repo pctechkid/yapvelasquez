@@ -22,24 +22,21 @@
 <!-- header section starts  -->
 
 <header>
-
-    <a href="#" class="logo"><span>Yap</span>Chin</a>
+        
+    <a href="/student/index#home" class="logo"><span>Yap</span>Chin</a>
 
     <input type="checkbox" id="menu-bar">
     <label for="menu-bar" class="fas fa-bars"></label>
-
-    <nav class="navbar">
-        <a href="#home">HOME</a>
+        <center>
+    <nav class="navbar" > 
+        <a href="/student/index#home">HOME</a>
+        <a href="/student/index#features">features</a>
+        <a href="#/student/indexabout">about</a>
+        <a href="/student/index#pricing">courses</a>
+        <a href="/student/index#contact">contact us</a>
         <a href="/student/dashboard">DASHBOARD</a>
-        <a href="#features">features</a>
-        <a href="#about">about</a>
-        <a href="#pricing">courses</a>
-        <a href="#contact">contact us</a>
-        <a href="  {% url 'myapp1:loginview_view' %}">SIGN UP</a>
-
-      
     </nav>
-
+        </center>
 </header>
 
 <!-- header section ends -->
@@ -106,33 +103,40 @@
 
 <!-- features section ends -->
 
-<!-- about section starts  -->
 
-<section class="about" id="about">
+<!-- features section starts  -->
 
-    <h1 class="heading"> about the app <br><br><br> </h1>
+<section class="features" id="about">
 
-    <div class="column">
+    <h1 class="heading"> About Us </h1>
 
-        <div class="image">
-            <img src="{% static 'images/chin1.jpg'%}" width="10" height="600" alt=""><!-- add pic of yourself here je and add something about yourself below-->
-        </div>
+    <div class="box-container">
 
-        <div class="content">
+        <div class="box">
+            <img src="{% static 'images/chin.jpg'%}" alt="">
             <h3>Kristine Velasquez</h3>
-           <h4> <p>Hi Everyone! I am Kristine Velasquez and we created this website to help students register to their subjects.</p>
-            <p>Hi! I am Kristine Velasquez a BSIT 3rd year student partner with Jerech Yap to implement this project. This project is used for student application to courses and different subject offered to our University.</p></h4>
-            
-            <div class="buttons">
-                <a href="#" class="btn"> <i class="fab fa-google-plus-square"></i> Google Plus </a>
-                <a href="#" class="btn"> <i class="fab fa-facebook-square"></i> Facebook </a>
-            </div>
+           
+            <p> 
+                Hi! I am Kristine Velasquez a BSIT 3rd year student partner with Jerech Yap to implement this project. 
+                This project is used for student application to courses and different subject offered to our University.
+            <a href="#" class="btn">read more</a>
         </div>
+
+        <div class="box">
+            <img src="{% static 'images/jerech.jpg'%}" alt="">
+            <h3>Jerech Yap</h3>
+            <p> 
+
+                This project is used for student application to courses and different subject offered to our University.
+            <a href="#" class="btn">read more</a>
+        </div>
+
     
-          
     </div>
 
 </section>
+ 
+
  
 
 
@@ -369,7 +373,7 @@
 
     </div>
 
-    <h1 class="credit"> &copy; copyright @ 2021 by Kristine, Velasquez CSIT327 G2-C1 AY 2021 - 2022 </h1>
+    <h1 class="credit"> &copy; copyright @ 2021 by Kristine Velasquez and Jerech Ira Ann Yap CSIT327 G2-C1 AY 2021 - 2022 </h1>
 
 </div>
 
