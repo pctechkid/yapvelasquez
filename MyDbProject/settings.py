@@ -16,6 +16,8 @@ from pathlib import Path
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
+PROJECT_PATH = os.path.realpath(os.path.dirname(__file__))
+
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
@@ -56,7 +58,7 @@ ROOT_URLCONF = 'MyDbProject.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'Templates')],
+        'DIRS': [],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -137,9 +139,13 @@ STATIC_URL = '/static/'
 
 MEDIA_URL = '/images/'
 
+TEMPLATE_DIRS = [
+    '/PythonServer/yapvelasquez/myapp1/Templates/',
+]
+
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
-STATICFILESFILES_DIRS = [
+STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static')
 ]
 
