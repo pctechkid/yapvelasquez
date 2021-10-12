@@ -1,0 +1,90 @@
+{% load static %}
+
+
+<!DOCTYPE html>
+<head>
+	<title>STUDENT</title>
+	<link rel = "icon" href = 
+    "https://media.geeksforgeeks.org/wp-content/cdn-uploads/gfg_200X200.png" 
+            type = "image/x-icon">
+
+		<meta charset="UTF-8"> 
+	<title> Add Student </title>
+		<link rel="stylesheet" href="{% static 'css/registration.css' %}" />
+		 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+
+<body>
+	{% block content %}
+	
+	<hr/>
+	<form method="POST">
+		{% csrf_token %}
+
+		<div class="container">
+			<div class="header">
+				<center>
+				<h1>Add Students<br><br></h1>
+			</div></center>
+			<center>
+		<form>
+ 			<span>
+				<div class="forms">
+				<i class="fa fa-user"></i>
+	 <input type="text" class="form-control" id="id-fname" name="firstname" placeholder="Enter First Name"/>
+	</span><br></div>
+
+	<span>
+		<div class="forms">
+	<i class="fa fa-lock"></i>
+	 <input type="text" class="form-control" id="id-lname" name="lastname" placeholder="Enter Last Name"/>
+	</span><br></div>
+
+	<span>
+		<div class="forms">
+	<i class="fa fa-lock"></i>
+	 <input type="text" class="form-control" id="id-Address" name="address" placeholder="Enter Address"/>
+		</span><br></div>
+
+		<span>
+			<div class="forms">
+	<i class="fa fa-lock"></i>
+	 <input type="text" class="form-control" id="id-Idn" name="idn" placeholder="Enter Student ID"/>
+		</span><br></div>
+
+		<span>
+			<div class="forms">
+	<i class="fa fa-lock"></i>
+	 <input type="text" class="form-control" id="id-Course" name="course" placeholder="Enter Course"/>
+		</span><br></div>
+
+		<span>
+			<div class="forms">
+	<i class="fa fa-lock"></i>
+	 <input type="text" class="form-control" id="id-Year" name="year" placeholder="Enter year level"/>
+		</span><br></div>
+
+	<div class="button">
+	
+	<input type="submit"value="Submit"/>
+	<a type = "button" class="btn btn-secondary" id="id_registration" href="{% url 'myapp1:dashboard_view' %}">CANCEL</a>
+
+		</div> </center>
+{% endblock content %}
+	</form>
+	<hr/>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
