@@ -56,7 +56,7 @@ ROOT_URLCONF = 'MyDbProject.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, "Templates")],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -85,7 +85,7 @@ WSGI_APPLICATION = 'MyDbProject.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'mydbproject', 
+        'NAME': 'mydbproject-jerech', 
         'USER': 'root',
         'PASSWORD': '',
         'HOST': '127.0.0.1',
