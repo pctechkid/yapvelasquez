@@ -9,8 +9,11 @@ from myapp1 import signupview, loginview
 
 app_name= 'myapp1'
 urlpatterns= [
+
+    path('', views.fromroottostudent.as_view(), name="roottostudent"),
+    path('student', views.fromstudenttoindex.as_view(), name="studenttoindex"),
     #urls for student app
-path('index', views.MyIndexView.as_view(), name="student_index_view"),
+    path('index', views.MyIndexView.as_view(), name="student_index_view"),
     path('dashboard', views.DashboardView.as_view(), name="dashboard_view"),
     path('subject', views.SubjectView.as_view(), name="subject_view"),
     #path('loginpage', views.LogInView.as_view(), name="login_view"),   

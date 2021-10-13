@@ -8,6 +8,14 @@ from .forms import *
 
 # Create your views here.
 
+class fromroottostudent(View):
+    def get(self,request):
+        return redirect('myapp1:studenttoindex')
+
+class fromstudenttoindex(View):
+    def get(self,request):
+        return redirect('myapp1:student_index_view')
+
 class MyIndexView(View):
     def get(self, request):
             return render(request,'index.html')
